@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static Web Test</title>
+    <!-- Sử dụng Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f3f3e0; /* Màu nền */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        h1 {
+            color: #133e87;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #608bc1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #4a6fa0;
+        }
+        #message {
+            margin-top: 20px;
+            font-weight: 600;
+            color: #133e87;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">Welcome to My Website</h1>
+    <button id="clickMe" onclick="document.getElementById('message').innerText = 'Hello, Selenium!'">
+        Click Me
+    </button>
+    <p id="message"></p>
+</body>
+</html>
